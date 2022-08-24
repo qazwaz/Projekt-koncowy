@@ -6,17 +6,20 @@ import Navbar from 'react-bootstrap/Navbar';
 
 const Menu = () => {
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar expand="lg">
             <Container>
-                <Navbar.Brand href="#home">My Simple Site</Navbar.Brand>
+                <Navbar.Brand href="/home"><h1>Hello Alan!</h1></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link >
-                            <Link to="/">Home</Link>
+                            <Link to="/mustDo">Must do</Link>
                         </Nav.Link>
                         <Nav.Link>
-                            <Link to="/about">About</Link>
+                            <Link to="/about">FreeTime</Link>
+                        </Nav.Link>
+                        <Nav.Link >
+                            <Link to="/summary">Summary</Link>
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

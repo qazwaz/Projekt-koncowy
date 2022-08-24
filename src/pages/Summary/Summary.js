@@ -2,19 +2,22 @@ import React from 'react';
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
+import Button from 'react-bootstrap/Button';
 
-const About = () => {
+const Summary = () => {
     return (
         <Container>
             <Row className="justify-content-md-center">
-                <Col sm>1 of 3</Col>
+                <Col sm></Col>
                 <Col sm xs={6}>
-                    It's about page with example content
+                    <div>
+                        <Button variant="success" size="lg">Let's check the price</Button>
+                    </div>
                 </Col>
-                <Col sm>3 of 3</Col>
+                <Col sm></Col>
             </Row>
         </Container>
     );
 };
 
-export default About;
+export default Summary;
