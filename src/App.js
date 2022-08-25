@@ -6,6 +6,11 @@ import FreeTime from "./pages/FreeTime/FreeTime";
 import Menu from "./components/Menu/Menu";
 import Summary from "./pages/Summary/Summary";
 
+// fetch("http://localhost:4000/profile")
+//     .then((res) => res.json())
+//     .then((data) => {
+//         console.log(data)
+//     });
 
 function App() {
     return (
