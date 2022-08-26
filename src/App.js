@@ -5,12 +5,16 @@ import MustDo from "./pages/MustDo/MustDo";
 import FreeTime from "./pages/FreeTime/FreeTime";
 import Menu from "./components/Menu/Menu";
 import Summary from "./pages/Summary/Summary";
+import {useEffect} from "react";
 
-// fetch("http://localhost:4000/profile")
-//     .then((res) => res.json())
-//     .then((data) => {
-//         console.log(data)
-//     });
+// useEffect(() => {
+//     fetch("http://localhost:4000/profile")
+//         .then((res) => res.json())
+//         .then((data) => {
+//             console.log(data)
+//         });
+// },[]);
+
 
 function App() {
     return (
@@ -20,9 +24,9 @@ function App() {
         >
             <Menu/>
             <Routes>
-                <Route path="mustDo" element={<MustDo items={["Homework", "English lesson", "Physical activity", "Room cleaning", "A walk with the dog"]}/>}/>
-                <Route path="about" element={<FreeTime/>}/>
-                <Route path="summary" element={<Summary/>}/>
+                <Route path="/mustDo" element={<MustDo items={["Homework", "English lesson", "Physical activity", "Room cleaning", "A walk with the dog"]}/>}/>
+                <Route path="/about" element={<FreeTime/>}/>
+                <Route path="/summary" element={<Summary/>}/>
             </Routes>
         </ThemeProvider>
     );
